@@ -1,2 +1,4 @@
 # codewars
-Code Wars Kata Solutions
+A variety of Code Wars Kata Solutions
+
+Author: Chase Hennion
