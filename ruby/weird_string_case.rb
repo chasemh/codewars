@@ -14,6 +14,11 @@
 # weirdcase( "Weird string case" );#=> returns "WeIrD StRiNg CaSe"
 
 def weirdcase( string )
+  # Splitting, upcase, downcase methods have odd behavior if a string is empty
+  if string.length() == 0
+      return string
+  end
+
   weirdWords = Array.new()
   for word in string.split(' ')
     chars = word.chars()
@@ -26,7 +31,7 @@ def weirdcase( string )
         chars[i].downcase!
       end
     end
-    # Word made weird
+    # Word made 'weird'
     weirdWords.push( chars.join('') )
   end
   # Join all weird words into a single string
